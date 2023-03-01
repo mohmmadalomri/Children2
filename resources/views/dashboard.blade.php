@@ -44,6 +44,15 @@
     <!-- BEGIN: Custom CSS-->
     <link rel="stylesheet" type="text/css" href="{{asset('app-assets/css-rtl/custom-rtl.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('assets/css/style-rtl.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+        .arabic{
+            font-family: 'Noto Sans Arabic', sans-serif;
+        }
+    </style>
     <!-- END: Custom CSS-->
 
 </head>
@@ -139,7 +148,7 @@
                                                                 <img src="{{asset('app-assets/images/logo/logo.png')}}"
                                                                      width="35px" height="50px">
                             </svg></span>
-                    <h2 class="brand-text">اطفالنا</h2>
+                    <h2 class="brand-text arabic">اطفالنا</h2>
                 </a></li>
             <li class="nav-item nav-toggle"><a class="nav-link modern-nav-toggle pe-0" data-bs-toggle="collapse"><i
                         class="d-block d-xl-none text-primary toggle-icon font-medium-4" data-feather="x"></i><i
@@ -155,47 +164,47 @@
             <li class=" @if($menu =="categoryofgame") active @endif nav-item"><a class="d-flex align-items-center"
                                                                                  href="{{route('categoryofgames.index')}}">
                     <i data-feather="life-buoy"></i>
-                    <span class="menu-title text-truncate" data-i18n="Email">تصنيفات  الالعاب</span></a>
+                    <span class="menu-title text-truncate arabic" data-i18n="Email">تصنيفات  الالعاب</span></a>
             </li>
             <li class="@if($menu =="games") active @endif nav-item"><a class="d-flex align-items-center"
                                                                        href="{{route('games.index')}}"><i
                         data-feather="life-buoy"></i>
-                    <span class="menu-title text-truncate" data-i18n="Email">العب واستمتع</span></a>
+                    <span class="menu-title text-truncate arabic" data-i18n="Email">العب واستمتع</span></a>
             </li>
             <li class=" @if($menu =="voiccategory") active @endif nav-item"><a class="d-flex align-items-center"
                                                                                href="{{route('voice-category.index')}}">
                     <i data-feather="mic"></i>
-                    <span class="menu-title text-truncate" data-i18n="Todo"> تصنيفات تلاوة القارئ الصغير</span></a>
+                    <span class="menu-title text-truncate arabic" data-i18n="Todo"> تصنيفات تلاوة القارئ الصغير</span></a>
             </li>
             <li class="@if($menu =="voice") active @endif nav-item"><a class="d-flex align-items-center"
                                                                        href="{{route('voice.index')}}">
                     <i data-feather="mic"></i>
-                    <span class="menu-title text-truncate" data-i18n="Todo">  تلاوة القارئ الصغير </span></a>
+                    <span class="menu-title text-truncate arabic" data-i18n="Todo">  تلاوة القارئ الصغير </span></a>
             </li>
             <li class=" @if($menu =="translationcategory") active @endif nav-item"><a class="d-flex align-items-center"
                                                                                       href="{{route('translation-category.index')}}">
                     <i data-feather="type"></i>
-                    <span class="menu-title text-truncate" data-i18n="Calendar">تصنيفات التفاسير</span></a>
+                    <span class="menu-title text-truncate arabic" data-i18n="Calendar">تصنيفات التفاسير</span></a>
             </li>
             <li class=" @if($menu =="translation") active @endif nav-item"><a class="d-flex align-items-center"
                                                                               href="{{route('translation.index')}}">
                     <i data-feather="type"></i>
-                    <span class="menu-title text-truncate" data-i18n="Calendar">التفاسير</span></a>
+                    <span class="menu-title text-truncate arabic" data-i18n="Calendar">التفاسير</span></a>
             </li>
             <li class="@if($menu =="questioncqteory") active @endif nav-item"><a class="d-flex align-items-center"
                                                                                  href="{{route('question-category.index')}}">
                     <i data-feather="type"></i>
-                    <span class="menu-title text-truncate" data-i18n="Calendar">تصنيفات اختبر معلوماتك </span></a>
+                    <span class="menu-title text-truncate arabic" data-i18n="Calendar">تصنيفات اختبر معلوماتك </span></a>
             </li>
             <li class="@if($menu =="question") active @endif nav-item"><a class="d-flex align-items-center"
                                                                           href="{{route('question.index')}}">
                     <i data-feather="type"></i>
-                    <span class="menu-title text-truncate" data-i18n="Calendar">اختبر معلوماتك </span></a>
+                    <span class="menu-title text-truncate arabic" data-i18n="Calendar">اختبر معلوماتك </span></a>
             </li>
             <li class="@if($menu =="contact") active @endif nav-item"><a class="d-flex align-items-center"
                                                                          href="{{route('contact.index')}}">
                     <i data-feather="mail"></i>
-                    <span class="menu-title text-truncate" data-i18n="Calendar">تواصل معنا</span></a>
+                    <span class="menu-title text-truncate arabic" data-i18n="Calendar">تواصل معنا</span></a>
             </li>
 
         </ul>
